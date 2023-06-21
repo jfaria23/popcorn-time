@@ -3,6 +3,7 @@ function Movie(props) {
     <div className="card">
       <p>{props.movieDetails.title}</p>
       <p>Rating: {props.movieDetails.rating}</p>
+      <p>Year: {props.movieDetails.year}</p>
 
       {props.movieDetails.imgURL ? (
         <img src={props.movieDetails.imgURL} />
@@ -17,7 +18,7 @@ function Movie(props) {
 
         <button
           onClick={() => {
-            props.callbackToDelete(props.movieDetails.id);
+            props.callbackToDelete(props.movieDetails.title);
           }}
         >
           Delete this movie
