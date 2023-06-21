@@ -12,7 +12,7 @@ function App() {
 
   const deleteMovie = (movieId) => {
     console.log("deleting movie with id....", movieId);
-    moviesToDisplay.push(); // NEVER MODIFY STATE DIRECTLY !
+    //moviesToDisplay.push(); // NEVER MODIFY STATE DIRECTLY !
     const newList = moviesToDisplay.filter((element) => {
       return element.id !== movieId;
     });
